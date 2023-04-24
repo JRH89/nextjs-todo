@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Login from '../components/login'
+import UserDashboard from '@/components/UserDashboard'
 import { useAuth } from '@/context/AuthContext'
 
 export default function Home() {
@@ -12,8 +13,8 @@ export default function Home() {
         <meta name="description" content="My todo list" />
         <link rel='icon' href="/favicon.ico/" />
       </Head>
-      <Login />
-      
+      {!currentUser && <Login />}
+      {currentUser && <UserDashboard/>}
     </>
   )
 }

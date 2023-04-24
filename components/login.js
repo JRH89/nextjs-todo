@@ -7,7 +7,8 @@ export default function Login() {
     const [error, setError] = useState(null)
     const [isLoggingIn, setIsLoggingIn] = useState(true)
     
-    const { login } = useAuth()
+    const { login, signup, currentUser } = useAuth()
+    console.log(currentUser)
     
     async function submitHandler() {
         if (!email || !password) {
@@ -15,7 +16,12 @@ export default function Login() {
             return
         }
         if (isLoggingIn) {
-         return await login(email, password)
+            try {
+                await login(email, password)
+            } catch (err) {
+                setError('Incorrect email or password')
+            }
+            return
         }
         await signup(email, password)
     }

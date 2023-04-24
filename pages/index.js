@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Login from '../components/login'
+import { useAuth } from '@/context/AuthContext'
 
 export default function Home() {
+  const { currentUser } = useAuth()
   return (
     <>
       <Head>

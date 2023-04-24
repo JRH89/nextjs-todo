@@ -1,3 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a full stack [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and created with Next.js, TailwindCSS, and Firebase (Authorization and Database).
 
-Created with Next.js, TailwindCSS, and Firebase.
+Signup with email and password to access your very own ToDo List from anywhere. Never forget what you need to get done ever again!

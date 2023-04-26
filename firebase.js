@@ -3,15 +3,15 @@ import { getAuth } from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDoaGmGs-vQo0kusAaIww5O86xf2uKJuG4",
-  authDomain: "next-todo-19711.firebaseapp.com",
-  projectId: "next-todo-19711",
-  storageBucket: "next-todo-19711.appspot.com",
-  messagingSenderId: "626196828886",
-  appId: "1:626196828886:web:035241602dc1aa170caf77"
-};
+  apiKey: process.env.NEXT_PUBLIC_APIKEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTHDOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECTID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGEBUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGINGSENDERID,
+  appId: process.env.NEXT_PUBLIC_APPID
+}
 
-const app = initializeApp(firebaseConfig)
+const app = initializeApp(firebaseConfig, "next-todo")
 
 export const auth = getAuth(app)
 export const db = getFirestore(app)

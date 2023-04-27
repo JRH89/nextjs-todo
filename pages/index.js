@@ -9,11 +9,11 @@ export default function Home() {
     <>
       <Head>
         <meta charSet="UTF-8" />
-        <meta property="og:url" content="https://nextjs-blog-jrh89.vercel.app" />
+        <meta property="og:url" content="https://nextjs-todo-rose.vercel.app" />
         <meta property="og:title" content="ToDo" />
         <meta property="og:description" content="A simple ToDo app made with NextJS, TailwindCSS, and Firebase" />
         <meta property="og:image" content="cover-todo.png" />
-        <meta property="url" content="https://nextjs-blog-jrh89.vercel.app" />
+        <meta property="url" content="https://nextjs-todo-rose.vercel.app" />
         <meta property="title" content="ToDo" />
         <meta property="description" content="A simple ToDo app made with NextJS, TailwindCSS, and Firebase" />
         <meta property="image" content="cover-todo.png" />

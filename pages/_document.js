@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta charSet="UTF-8" />
         <meta property="og:url" content="https://nextjs-blog-jrh89.vercel.app" />
-        <meta property="og:title" content="ToDo" />
+        <meta property="og:title" content="Get-It-Done" />
         <meta property="og:description" content="A simple ToDo app made with NextJS, TailwindCSS, and Firebase" />
         <meta property="og:image" content="public/cover-todo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
